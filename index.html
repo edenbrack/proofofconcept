@@ -40,13 +40,18 @@
         <h1><strong>in shape</strong> @ ollie quinn</h1>
       </div>
       <svg viewBox="0 0 1152 576" class="illustration">
+        <defs>
+          <mask id="mask">
+            <rect x="65%" y="0" width="65%" height="100%" fill="#fff" />
+          </mask>
+        </defs>
         <g id="body">
           <path class="outline" d="M567 308l70 3c34 1 59-31 50-64-13-46-44-101-115-102-68 0-93 48-111 93"/>
           <path class="outline" d="M516 244a33 33 0 0 0-28 31l-2 107c0 15-11 20-21 23l-32 5a24 24 0 0 0-14 10 7 7 0 0 0 6 10h86a19 19 0 0 0 19-19l1-59M618 241l-56 1M480 263s-6 0-6 7 6 7 6 7"/>
         </g>
-        <g id="ball">
-          <circle class="outline yellow" cx="803" cy="406" r="25"/>
-          <path class="outline white" d="M209 391h510a4 4 0 0 1 4 5 4 4 0 0 1-4 4h-12a3 3 0 0 0-3 3 3 3 0 0 0 3 4h16a4 4 0 0 1 4 3 4 4 0 0 1-4 4h-19a4 4 0 0 0-4 4 4 4 0 0 0 4 3h21a4 4 0 0 1 4 5 4 4 0 0 1-4 4H209" />
+        <g mask="url(#mask)">
+          <circle class="ball outline yellow" cx="803" cy="406" r="25"/>
+          <path class="arm outline white" d="M209 391h510a4 4 0 0 1 4 5 4 4 0 0 1-4 4h-12a3 3 0 0 0-3 3 3 3 0 0 0 3 4h16a4 4 0 0 1 4 3 4 4 0 0 1-4 4h-19a4 4 0 0 0-4 4 4 4 0 0 0 4 3h21a4 4 0 0 1 4 5 4 4 0 0 1-4 4H209"/>
         </g>
         <g id="hair">
           <path class="outline" d="M470 238s-49-10-49 54v74s1 60-71 64h-39"/>
@@ -68,6 +73,9 @@
         <h1>a solo show by eden brack</h1>
       </div>
       <svg viewBox="0 0 576 576" class="illustration">
+        <g id="droplet" data-name="droplet">
+          <path class="outline blue" d="M305,105.88l-2.8,9.12s-5.11,13.29,4.33,13.35c10.82.06,5.77-12.27,5.77-12.27l-3.93-10.31A1.78,1.78,0,0,0,305,105.88Z"/>
+        </g>
         <g id="bottle" data-name="bottle">
           <rect class="outline white" x="296.98" y="64.59" width="13.1" height="15.64" rx="3.68"/>
           <rect class="outline white" x="213.52" y="55.77" width="86.32" height="33.07" rx="7.88"/>
@@ -94,15 +102,12 @@
           <line class="outline" x1="351.56" y1="269.02" x2="353.15" y2="279.39"/>
           <line class="outline" x1="359.55" y1="269.02" x2="361.02" y2="279.88"/>
         </g>
-        <g id="droplet" data-name="droplet">
-          <path class="outline blue" d="M305,105.88l-2.8,9.12s-5.11,13.29,4.33,13.35c10.82.06,5.77-12.27,5.77-12.27l-3.93-10.31A1.78,1.78,0,0,0,305,105.88Z"/>
-        </g>
       </svg>
       <h1>12 july 2019</h1>
       <h1>be there or be pear</h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
     <script src="js/main.js"></script>
   </body>
