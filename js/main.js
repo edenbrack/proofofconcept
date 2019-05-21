@@ -40,7 +40,7 @@ var scene1 = new ScrollMagic.Scene({
 
 var scene2 = new ScrollMagic.Scene({
   triggerElement: "#element2",
-  duration: 300,
+  duration: 400,
   offset: 150
 })
   .setTween(tween2)
