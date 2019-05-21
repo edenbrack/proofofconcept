@@ -15,7 +15,7 @@ var tween1 = new TimelineMax()
 .to("#utters", 0.75, {y:0})
 .to("#tongue", 1, {x:0});
 
-var tween2 = TweenMax.to("#ball", 3, {x:410});
+var tween2 = TweenMax.to([".ball", ".arm"], 3, {x:410});
 
 var tween3 = TweenMax.to("#droplet", 3, {y:50, repeat:2, repeatDelay:0.3});
 
