@@ -32,7 +32,7 @@ var frameChange = new ScrollMagic.Scene({
 var scene1 = new ScrollMagic.Scene({
     triggerElement: "#element1",
     duration: 150,
-    offset: 250
+    offset: 450
   })
     .setTween(tween1)
     .addIndicators()
